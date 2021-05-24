@@ -1,0 +1,46 @@
+{
+  "graph": {
+    "node": [
+      {
+        "filename": "item.tsv",
+        "attribute": []
+      },
+      {
+        "filename": "user.tsv",
+        "attribute": []
+      },
+      {
+        "filename": "streamer.tsv",
+        "attribute": []
+      }
+    ],
+    "edge": [
+      {
+        "filename": "user-item-buy.tsv",
+        "weighted": false
+      },
+      {
+        "filename": "user-streamer-follow.tsv",
+        "weighted": false
+      },
+      {
+        "filename": "streamer-item-sell.tsv",
+        "weighted": false
+      }
+    ]
+  },
+  "task": [
+    {
+      "filename": "user-item-buy.tsv",
+      "type": "top-k-recommendation",
+      "loss": "binary-cross-entropy",
+      "weight": 1
+    },
+    {
+      "filename": "user-streamer-follow.tsv",
+      "type": "top-k-recommendation",
+      "loss": "binary-cross-entropy",
+      "weight": 1
+    }
+  ]
+}
