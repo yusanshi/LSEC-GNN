@@ -44,7 +44,7 @@ cat LSEC-Small-* | tar -xzvf -
 
 ![table](https://user-images.githubusercontent.com/36265606/119290511-33271580-bc7f-11eb-84bc-e485fd4ab93b.png)
 
-Each line of commands corresponds to a method in the above table.
+Each line of commands corresponds to a method in the above table (taken from the paper).
 
 ```bash
 # In the project root directory
@@ -57,16 +57,27 @@ python -m rechub.train --model_name HET-LightGCN --dataset_path ./data/LSEC-Smal
 python -m rechub.train --model_name HET-GAT --dataset_path ./data/LSEC-Small --metadata_path ./metadata/LSEC.json --edge_choice 0 1 2 --training_task_choice 0 1 --evaluation_task_choice 0
 ```
 
+You can visualize metrics with TensorBoard.
+
+```bash
+tensorboard --logdir runs
+```
+
+> Tip: by adding `REMARK` environment variable, you can make the runs name in TensorBoard more meaningful. For example, `REMARK=lr-0.001 python -m rechub.train ...`.
+
 ### Test
 
-You can run the training commands with parameter `--save_checkpoint True` and save the checkpoints and use them to evaluate.
+You can run the training commands with parameter `--save_checkpoint True` and use the saved checkpoints to evaluate after training.
 
 Here we provide the checkpoints so you can directly download and evaluate with them.
 
 ```
+
 ```
 
 Then replace `rechub.train` in the training commands with `rechub.test` to evaluate the checkpoints.
+
+Note the results you get with the checkpoints could have some difference with the results in paper, since the latter are averaged results.
 
 ## Credits
 
