@@ -1,6 +1,6 @@
 # LSEC-GNN
 
-The repository contains the details about our paper **[Leveraging Tripartite Interaction Information from Live Stream E-Commerce for Improving Product Recommendation](https://arxiv.org/abs/TODO.pdf)** (KDD 2021).
+The repository contains the details about our paper **[Leveraging Tripartite Interaction Information from Live Stream E-Commerce for Improving Product Recommendation](https://arxiv.org/abs/2106.03415)** (KDD 2021).
 
 ## Requirements
 
@@ -23,7 +23,7 @@ Note this repository contains no model code. Instead we organized our code into 
 pip install rechub
 ```
 
-If there are any problems with later commands, try to install this specific version ([Pypi](https://pypi.org/project/rechub/TODO/), [GitHub](https://github.com/yusanshi/RecHub/tree/TODO-hash)):
+If there are any problems with later commands, try to install this specific version ([PyPI](https://pypi.org/project/rechub/TODO/), [GitHub](https://github.com/yusanshi/RecHub/tree/TODO-hash)):
 
 ```bash
 pip install rechub==TODO
@@ -71,8 +71,14 @@ You can run the training commands with parameter `--save_checkpoint True` and us
 
 Here we provide the checkpoints so you can directly download and evaluate with them.
 
-```
+First download `checkpoint.tar.gz` from <https://drive.google.com/file/d/1RA-wF1hQxLkjVN7R3N1xHkhPDjsEqVv8/view?usp=sharing>. Put it into project root directory.
 
+Now extract the checkpoints:
+
+```bash
+# In the project root directory
+mkdir checkpoint
+tar -xzvf checkpoint.tar.gz -C checkpoint
 ```
 
 Then replace `rechub.train` in the training commands with `rechub.test` to evaluate the checkpoints.
@@ -85,6 +91,6 @@ JD Technology (京东科技)
 
 ## Cite
 
-```TODO
-
+```tex
+TODO
 ```

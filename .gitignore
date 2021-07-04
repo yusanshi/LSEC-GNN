@@ -1,4 +1,4 @@
 data/
-checkpoint/
+checkpoint*
 runs/
 log/
