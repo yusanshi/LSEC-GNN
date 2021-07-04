@@ -20,13 +20,19 @@ git clone https://github.com/yusanshi/LSEC-GNN && cd LSEC-GNN
 Note this repository contains no model code. Instead we organized our code into a separate Python package called [RecHub](https://github.com/yusanshi/RecHub/). It is a general package for recommendation featuring GNN training especially heterogeneous graph. Refer to its repository for the details.
 
 ```bash
+# Installing the main package.
 pip install rechub
+
+# Installing the DGL library.
+# This is for CPU version. For CUDA version, use dgl-cu[xxx]
+pip install dgl # or dgl-cu92, dgl-cu101, dgl-cu102, dgl-cu110 for CUDA 9.2, 10.1, 10.2, 11.0, respectively.
 ```
 
 If there are any problems with later commands, try to install this specific version ([PyPI](https://pypi.org/project/rechub/TODO/), [GitHub](https://github.com/yusanshi/RecHub/tree/TODO-hash)):
 
 ```bash
-pip install rechub==TODO
+pip install rechub==0.0.5
+pip install dgl==0.5.3 # or CUDA version: dgl-cu[xxx]==0.5.3
 ```
 
 ### Download the dataset
