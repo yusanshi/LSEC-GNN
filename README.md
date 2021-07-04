@@ -28,7 +28,7 @@ pip install rechub
 pip install dgl # or dgl-cu92, dgl-cu101, dgl-cu102, dgl-cu110 for CUDA 9.2, 10.1, 10.2, 11.0, respectively.
 ```
 
-If there are any problems with later commands, try to install this specific version ([PyPI](https://pypi.org/project/rechub/TODO/), [GitHub](https://github.com/yusanshi/RecHub/tree/TODO-hash)):
+If there are any problems with later commands, try to install this specific version ([PyPI](https://pypi.org/project/rechub/0.0.5/), [GitHub](https://github.com/yusanshi/RecHub/releases/tag/v0.0.5)):
 
 ```bash
 pip install rechub==0.0.5
