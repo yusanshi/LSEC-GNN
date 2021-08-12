@@ -98,5 +98,20 @@ JD Technology (京东科技)
 ## Cite
 
 ```tex
-TODO
+@inproceedings{LSEC-GNN,
+author = {Yu, Sanshi and Jiang, Zhuoxuan and Chen, Dong-Dong and Feng, Shanshan and Li, Dongsheng and Liu, Qi and Yi, Jinfeng},
+title = {Leveraging Tripartite Interaction Information from Live Stream E-Commerce for Improving Product Recommendation},
+year = {2021},
+isbn = {9781450383325},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3447548.3467151},
+doi = {10.1145/3447548.3467151},
+booktitle = {Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining},
+pages = {3886–3894},
+numpages = {9},
+keywords = {multi-task learning, live streaming e-commence, graph representation learning, product recommendation},
+location = {Virtual Event, Singapore},
+series = {KDD '21}
+}
 ```
